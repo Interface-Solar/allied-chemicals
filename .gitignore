@@ -1,0 +1,10 @@
+# Ignore backup folders and PSD templates
+Old Data/
+Allied_profile.pdf
+
+# Ignore unused heavy video
+images/hero_video.mp4
+
+# OS generated files
+.DS_Store
+Thumbs.db

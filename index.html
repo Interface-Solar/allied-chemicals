@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allied Chemicals | Premium Electroplating & Polishing Solutions</title>
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Allied Chemicals - Pakistan's leading importer and supplier of electroplating chemicals, nickel sheets, zinc nodes, chrome, cadmium, copper, and surface polishing materials.">
+    <meta name="keywords" content="Allied Chemicals, Electroplating, Nickel Plating, Zinc Plating, Polishing Materials, Karachi, Pakistan, Chemical Supplier">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo-area" id="nav-logo-btn">
+                <img src="images/logo.jpg" alt="Allied Chemicals Logo" class="logo-img" onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex'">
+                <div id="logo-fallback" class="logo-fallback" style="display: none;">
+                    <span class="fallback-letter">A</span>
+                    <span class="fallback-text">ALLIED</span>
+                </div>
+                <div class="logo-text">
+                    <span class="brand-name">ALLIED CHEMICALS</span>
+                    <span class="brand-tagline">Electroplating & Finishing Materials</span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-tab="home"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#catalog" class="nav-link" data-tab="catalog"><i class="fa-solid fa-flask"></i> Products</a>
+                <a href="#process" class="nav-link" data-tab="process"><i class="fa-solid fa-gears"></i> Process Flow</a>
+                <a href="#feedback" class="nav-link" data-tab="feedback"><i class="fa-solid fa-comments"></i> Reviews</a>
+                <a href="#contact" class="nav-link" data-tab="contact"><i class="fa-solid fa-address-book"></i> Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="cart-trigger" id="cart-trigger" aria-label="Open Order Cart">
+                    <i class="fa-solid fa-shopping-cart"></i>
+                    <span class="cart-badge" id="cart-badge">0</span>
+                    <span class="cart-label">My Order</span>
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <h3>Menu</h3>
+            <button class="drawer-close" id="mobile-drawer-close">&times;</button>
+        </div>
+        <nav class="mobile-nav-links">
+            <a href="#home" class="mobile-link active" data-tab="home"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#catalog" class="mobile-link" data-tab="catalog"><i class="fa-solid fa-flask"></i> Products</a>
+            <a href="#process" class="mobile-link" data-tab="process"><i class="fa-solid fa-gears"></i> Process Flow</a>
+            <a href="#feedback" class="mobile-link" data-tab="feedback"><i class="fa-solid fa-comments"></i> Reviews</a>
+            <a href="#contact" class="mobile-link" data-tab="contact"><i class="fa-solid fa-address-book"></i> Contact</a>
+        </nav>
+    </div>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+
+    <!-- Main Content Grid -->
+    <main class="main-content">
+
+        <section id="home" class="section active-section">
+            <div class="hero-banner">
+                <div class="hero-slideshow">
+                    <div class="slide" style="background-image: url('images/hero_banner.jpg');"></div>
+                    <div class="slide" style="background-image: url('images/nickel_plating.jpg');"></div>
+                    <div class="slide" style="background-image: url('images/zinc_chloride_japan.jpg');"></div>
+                    <div class="slide" style="background-image: url('images/copper_nuggets.jpg');"></div>
+                    <div class="slide" style="background-image: url('images/boric_acid.jpg');"></div>
+                </div>
+                <div class="hero-bg-overlay"></div>
+                <div class="container hero-container">
+                    <div class="hero-info" data-animate="fade-in-left">
+                        <div class="badge">ESTABLISHED 2013</div>
+                        <h1 class="hero-title">Impeccable Quality To <span class="highlight">Reliable Services</span></h1>
+                        <p class="hero-lead">Pakistan's premier importer and distributor of high-purity electroplating metals, specialized chemical solutions, and high-performance surface finishing materials. Partnering with top-tier global brands like INCO Europe.</p>
+                        <div class="hero-actions">
+                            <a href="#catalog" class="btn btn-primary" onclick="switchTab('catalog')">
+                                <i class="fa-solid fa-eye"></i> View Catalog
+                            </a>
+                            <a href="#contact" class="btn btn-secondary" onclick="switchTab('contact')">
+                                <i class="fa-solid fa-paper-plane"></i> Quick Inquiry
+                            </a>
+                        </div>
+                        <div class="hero-metrics">
+                            <div class="metric">
+                                <span class="metric-num">13+</span>
+                                <span class="metric-lbl">Years Industry Trust</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-num">200+</span>
+                                <span class="metric-lbl">Chemical Products</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-num">500+</span>
+                                <span class="metric-lbl">Satisfied Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-visual" data-animate="fade-in-right">
+                        <div class="image-stack">
+                            <img src="images/hero_banner.jpg" alt="Industrial Electroplating Setup" class="stack-img main-img" onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600'">
+                            <img src="images/before_after.jpg" alt="Metal Parts Finish" class="stack-img sub-img-1" onerror="this.src='https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&q=80&w=400'">
+                            <div class="visual-badge">
+                                <i class="fa-solid fa-award"></i>
+                                <span>INCO Europe Quality Standard</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client Logo Bar -->
+            <div class="client-bar">
+                <div class="container">
+                    <p class="client-title">Trusted By Leading Manufacturers Across Pakistan</p>
+                    <div class="client-logos">
+                        <div class="client-logo-item">
+                            <img src="images/logo_sohrab.png" alt="Sohrab Bicycles Logo" class="client-logo-img">
+                            <span>Sohrab Bicycles</span>
+                        </div>
+                        <div class="client-logo-item">
+                            <img src="images/logo_honda.png" alt="Honda Vendors Logo" class="client-logo-img">
+                            <span>Honda Vendors</span>
+                        </div>
+                        <div class="client-logo-item">
+                            <img src="images/logo_master.png" alt="Master Sanitary Logo" class="client-logo-img">
+                            <span>Master Sanitary</span>
+                        </div>
+                        <div class="client-logo-item">
+                            <i class="fa-solid fa-cubes" style="font-size: 1.5rem; color: var(--text-secondary);"></i>
+                            <span>Auto Parts Industries</span>
+                        </div>
+                        <div class="client-logo-item">
+                            <i class="fa-solid fa-gem" style="font-size: 1.5rem; color: var(--text-secondary);"></i>
+                            <span>Jewellery Platers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ABOUT US SECTION -->
+            <div class="about-us-section container" data-animate="fade-in-up">
+                <div class="about-grid">
+                    <div class="about-visual">
+                        <div class="about-image-wrapper">
+                            <img src="images/about_industrial.jpg" alt="Allied Chemicals Warehouse & Plating Facility" onerror="this.src='https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=600'">
+                            <div class="about-experience-badge">
+                                <span class="exp-years">13+</span>
+                                <span class="exp-text">Years of Excellence</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <div class="badge">ABOUT OUR COMPANY</div>
+                        <h2 class="section-title">Leading the Electroplating Supply Industry</h2>
+                        <p class="lead-text">ALLIED CHEMICALS has established itself as Pakistan's premier supplier and direct importer of high-purity electroplating metals, specialized chemicals, and advanced surface finishing materials.</p>
+                        <p class="body-text">With an excellent track record of customer satisfaction, we supply premium quality raw materials, anodes, and chemical salts to major sectors including auto parts, sanitary ware, bicycles, and jewelry platers all over Pakistan. Through our strategic imports of original <strong>INCO Europe Nickel Metal and Chips</strong>, we guarantee the highest quality plating results.</p>
+                        <p class="body-text">The dedication, technical knowledge, and client-first attitude of our team members have earned us an esteemed clientele in a very short span of time. We are committed to providing the best possible service, technical troubleshooting, and quality materials at highly competitive prices.</p>
+                        
+                        <div class="about-features">
+                            <div class="about-feat-item">
+                                <i class="fa-solid fa-square-check"></i>
+                                <span>100% Purity Certified Anodes</span>
+                            </div>
+                            <div class="about-feat-item">
+                                <i class="fa-solid fa-square-check"></i>
+                                <span>Strategic Sourcing (INCO Europe)</span>
+                            </div>
+                            <div class="about-feat-item">
+                                <i class="fa-solid fa-square-check"></i>
+                                <span>Expert Technical Troubleshooting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Competencies Grid -->
+            <div class="competencies-section container">
+                <h2 class="section-title text-center">Why Choose Allied Chemicals?</h2>
+                <div class="grid grid-3">
+                    <div class="feature-card" data-animate="fade-in-up">
+                        <div class="card-icon"><i class="fa-solid fa-microscope"></i></div>
+                        <h3>Electroplating Tech Experts</h3>
+                        <p>Vast experience in surface finishing technology, offering complete professional chemical assistance and consultation.</p>
+                    </div>
+                    <div class="feature-card" data-animate="fade-in-up" style="animation-delay: 0.1s;">
+                        <div class="card-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <h3>Nationwide Distribution</h3>
+                        <p>Large network of distributors ensuring quick availability of chemicals and metals all over Pakistan.</p>
+                    </div>
+                    <div class="feature-card" data-animate="fade-in-up" style="animation-delay: 0.2s;">
+                        <div class="card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h3>Technical Troubleshooting</h3>
+                        <p>Dedicated customer service for on-site troubleshooting and process optimization in plating technology.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plating Capabilities & Solutions Section -->
+            <div class="capabilities-section container" data-animate="fade-in-up">
+                <div class="text-center">
+                    <div class="badge">OUR CORE CAPABILITIES</div>
+                    <h2 class="section-title">Industrial Electroplating &amp; Finishing Solutions</h2>
+                    <p class="section-subtitle text-center" style="margin: 0 auto 50px auto;">We import and distribute a comprehensive range of high-purity plating metals, anodes, and specialized chemical salts from global leaders.</p>
+                </div>
+                
+                <div class="grid grid-3 capabilities-grid">
+                    <!-- Nickel Card -->
+                    <div class="capability-card">
+                        <div class="cap-header nickel-theme">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <h3>Nickel Plating Solutions</h3>
+                        </div>
+                        <div class="cap-body">
+                            <p>Premium solutions for high-performance corrosion protection and brilliant finishes.</p>
+                            <ul>
+                                <li><strong>UK Carbonyl Nickel Chips:</strong> High-purity chips refined by carbonyl gas process at Clydach UK.</li>
+                                <li><strong>Vale Thompson Cathodes:</strong> Electrolytic pure nickel metal cathodes produced in Canada.</li>
+                                <li><strong>Nickel salts:</strong> High-solubility Nickel Sulfate and Nickel Chloride powders.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Zinc Card -->
+                    <div class="capability-card">
+                        <div class="cap-header zinc-theme">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <h3>Zinc Plating Systems</h3>
+                        </div>
+                        <div class="cap-body">
+                            <p>Advanced corrosion control and zinc finishes for auto parts and hardware.</p>
+                            <ul>
+                                <li><strong>Korea Zinc (KZ) Anodes:</strong> Ultra-pure zinc metal anodes for sacrificial protection.</li>
+                                <li><strong>Taiwan Zinc Chloride (98%):</strong> High-purity ZnCl2 for acid chloride zinc baths.</li>
+                                <li><strong>Conductive Salts:</strong> Potassium Chloride for cyanide-free acidic plating baths.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Chrome & Copper Card -->
+                    <div class="capability-card">
+                        <div class="cap-header chrome-theme">
+                            <i class="fa-solid fa-cubes"></i>
+                            <h3>Chrome &amp; Copper Plating</h3>
+                        </div>
+                        <div class="cap-body">
+                            <p>Hard industrial chrome and conductive copper plating for PCBs and auto trim.</p>
+                            <ul>
+                                <li><strong>Alloy Chrome Anodes:</strong> Custom lead/tin (PB/SN) and antimony (SB) anodes.</li>
+                                <li><strong>Phosphorous Copper Nuggets:</strong> Oxygen-free Cu-DHP nuggets (>99.9% purity) for rotogravure.</li>
+                                <li><strong>Chromic Acid Flakes:</strong> High-concentration chromium trioxide for hard chrome baths.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Cadmium & Precious Metals Card -->
+                    <div class="capability-card">
+                        <div class="cap-header cadmium-theme">
+                            <i class="fa-solid fa-gem"></i>
+                            <h3>Cadmium &amp; Precious Metals</h3>
+                        </div>
+                        <div class="cap-body">
+                            <p>High-spec military/aviation plating and decorative precious metal deposits.</p>
+                            <ul>
+                                <li><strong>Cadmium Ingots:</strong> High-tensile, corrosion-resistant pure cadmium ingots and salts.</li>
+                                <li><strong>LBMA Gold Ingots:</strong> Minimum 99.5% pure investment-grade gold for plating.</li>
+                                <li><strong>Pure .999 Silver Anodes:</strong> Soluble silver anodes for electrical and jewelry deposits.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Equipment & Accessories Card -->
+                    <div class="capability-card">
+                        <div class="cap-header equipment-theme">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <h3>Equipment &amp; Accessories</h3>
+                        </div>
+                        <div class="cap-body">
+                            <p>Complete plating line infrastructure, rectifier systems, and filtration cloths.</p>
+                            <ul>
+                                <li><strong>IGBT Rectifiers:</strong> High-power 3000A high-frequency switching rectifiers.</li>
+                                <li><strong>Titanium Anode Baskets:</strong> Economical titanium baskets for nickel chip plating.</li>
+                                <li><strong>PVC Tanks &amp; Filters:</strong> Heavy-duty PVC storage tanks and high-grade filter clothes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCT CATALOG SECTION -->
+        <section id="catalog" class="section container">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Product <span class="highlight">Catalog</span></h2>
+                    <p class="section-subtitle">Search and order high-quality electroplating chemicals, polishing materials, and metals.</p>
+                </div>
+                <div class="search-box-wrapper">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="product-search" placeholder="Search products, materials, or brands...">
+                    <button class="clear-search-btn" id="clear-search" style="display:none;">&times;</button>
+                </div>
+            </div>
+
+            <!-- Catalog Sub-Tabs for Dual Views -->
+            <div class="catalog-tabs">
+                <button class="catalog-tab-btn active" id="btn-show-order">
+                    <i class="fa-solid fa-cart-shopping"></i> Quick Order Catalog (12 Products)
+                </button>
+                <button class="catalog-tab-btn" id="btn-show-directory">
+                    <i class="fa-solid fa-table-list"></i> Complete Supply Index (From Profile)
+                </button>
+            </div>
+
+            <div class="catalog-layout">
+                <!-- Filters Sidebar -->
+                <aside class="catalog-sidebar">
+                    <div class="filter-group">
+                        <h3><i class="fa-solid fa-filter"></i> Categories</h3>
+                        <ul class="filter-list" id="category-filters">
+                            <li><button class="filter-btn active" data-category="all">All Products</button></li>
+                            <li><button class="filter-btn" data-category="nickel">Nickel Plating</button></li>
+                            <li><button class="filter-btn" data-category="zinc">Zinc Plating</button></li>
+                            <li><button class="filter-btn" data-category="electroplating-other">Other Electroplating</button></li>
+                            <li><button class="filter-btn" data-category="polishing">Polishing Materials</button></li>
+                            <li><button class="filter-btn" data-category="other">Other Chemicals</button></li>
+                        </ul>
+                    </div>
+
+                    <div class="order-tutorial-card">
+                        <h4><i class="fa-solid fa-circle-info"></i> How to Order</h4>
+                        <ol>
+                            <li>Select items and set quantities</li>
+                            <li>Click "Add to Order" button</li>
+                            <li>Open the "My Order" cart above</li>
+                            <li>Click "Checkout via WhatsApp" to instantly text your order list to us</li>
+                        </ol>
+                    </div>
+                </aside>
+
+                <!-- Catalog Content Area -->
+                <div class="catalog-content">
+                    <!-- 1. Quick Order Catalog View -->
+                    <div id="order-catalog-view">
+                        <!-- Loading / Empty states -->
+                        <div class="no-results" id="no-results" style="display: none;">
+                            <i class="fa-solid fa-box-open"></i>
+                            <p>No products match your search query.</p>
+                            <button class="btn btn-secondary btn-sm" id="reset-search">Clear Search Filters</button>
+                        </div>
+    
+                        <div class="product-grid" id="product-grid">
+                            <!-- Product cards dynamically loaded from app.js -->
+                        </div>
+                    </div>
+
+                    <!-- 2. Complete Chemical Supply Index View -->
+                    <div id="full-directory-view" style="display: none;">
+                        <div class="directory-info-card">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <p>This is a comprehensive directory of electroplating chemicals, anodes, polishing buffs, and industrial raw materials imported and supplied by Allied Chemicals. Click "Inquiry" to text our sales team about any item.</p>
+                        </div>
+                        <div class="directory-table-container">
+                            <table class="directory-table">
+                                <thead>
+                                    <tr>
+                                        <th>Product Name</th>
+                                        <th>Origin</th>
+                                        <th>Industrial Description</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="directory-tbody">
+                                    <!-- Dynamic rows loaded from app.js -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS SHOWCASE SECTION -->
+        <section id="process" class="section container">
+            <h2 class="section-title text-center">Interactive <span class="highlight">Process Flow</span></h2>
+            <p class="section-subtitle text-center">Explore the chemical plating and finishing stages to see our products in action.</p>
+            
+            <div class="process-interactive-wrapper">
+                <!-- Step Navigation Bubbles -->
+                <div class="process-steps-indicator">
+                    <div class="process-step-btn active" data-step="1">
+                        <div class="step-num">1</div>
+                        <span class="step-title">Metal Degreasing</span>
+                    </div>
+                    <div class="process-connector"></div>
+                    <div class="process-step-btn" data-step="2">
+                        <div class="step-num">2</div>
+                        <span class="step-title">Acid Pickling</span>
+                    </div>
+                    <div class="process-connector"></div>
+                    <div class="process-step-btn" data-step="3">
+                        <div class="step-num">3</div>
+                        <span class="step-title">Plating Bath</span>
+                    </div>
+                    <div class="process-connector"></div>
+                    <div class="process-step-btn" data-step="4">
+                        <div class="step-num">4</div>
+                        <span class="step-title">Filtration & Rinsing</span>
+                    </div>
+                    <div class="process-connector"></div>
+                    <div class="process-step-btn" data-step="5">
+                        <div class="step-num">5</div>
+                        <span class="step-title">Polishing & Finish</span>
+                    </div>
+                </div>
+
+                <!-- Step Details Panels -->
+                <div class="process-display-panel">
+                    <div class="process-detail-card active" id="process-step-1">
+                        <div class="detail-grid">
+                            <div class="detail-text">
+                                <div class="step-badge">STAGE 01</div>
+                                <h3>Surface Cleaning & Metal Degreasing</h3>
+                                <p>Before electroplating, the metal substrate must be completely free of grease, oils, rust, and soils to ensure perfect metal-to-metal bonding. Failure to clean results in peeling, pitting, and bubbles in the plating layer.</p>
+                                <h4>Essential Allied Products used:</h4>
+                                <ul>
+                                    <li><strong>Metal Cleaner Solutions</strong> (Formulated to break down heavy industrial greases)</li>
+                                    <li><strong>Dry Acids & Soda Ash</strong> (Used to adjust pH and neutralize surfaces)</li>
+                                    <li><strong>Water-based cleaning chemicals</strong> (Eco-friendly precision degreasers)</li>
+                                </ul>
+                            </div>
+                            <div class="detail-media">
+                                <img src="images/cleaners.jpg" alt="Metal Cleaning Process" onerror="this.src='https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=400'">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="process-detail-card" id="process-step-2">
+                        <div class="detail-grid">
+                            <div class="detail-text">
+                                <div class="step-badge">STAGE 02</div>
+                                <h3>Acid Pickling & Scale Removal</h3>
+                                <p>This stage removes oxides, rust, scale, and tarnish from the cleaned metal substrate. By immersing the part in an acid bath, the metal is micro-etched, leaving a clean, highly receptive surface ready for atomic metal bonding.</p>
+                                <h4>Essential Allied Products used:</h4>
+                                <ul>
+                                    <li><strong>Hydrochloric Acid (H.C.L)</strong> (High concentration for rust etching)</li>
+                                    <li><strong>Sulfuric Acid</strong> (Suitable for pickling steel and copper alloys)</li>
+                                    <li><strong>Rust Revenge Soak</strong> (Selective water-based rust removing liquid that works safely on steel)</li>
+                                </ul>
+                            </div>
+                            <div class="detail-media">
+                                <img src="images/rust_soak.png" alt="Acid Pickling Process" onerror="this.src='https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&q=80&w=400'">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-detail-card" id="process-step-3">
+                        <div class="detail-grid">
+                            <div class="detail-text">
+                                <div class="step-badge">STAGE 03</div>
+                                <h3>Electroplating Bath (Deposition)</h3>
+                                <p>The cleaned object is immersed in the plating solution where an electric current transfers metal ions from anodes (metal sheets) onto the object. This deposits a thin, uniform protective and shiny metal layer.</p>
+                                <h4>Essential Allied Products used:</h4>
+                                <ul>
+                                    <li><strong>INCO Europe Anode Nickel Sheets</strong> (Ultra-pure nickel for corrosion resistance)</li>
+                                    <li><strong>Zinc Metal & Zinc Cyanide/Chloride</strong> (For economical rust protection)</li>
+                                    <li><strong>Brighteners & Levellers</strong> (Nickel Brightener 1001/1002, Zinc Brightener for mirror-like luster)</li>
+                                </ul>
+                            </div>
+                            <div class="detail-media">
+                                <img src="images/bronze.jpg" alt="Electroplating Bath" onerror="this.src='https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&q=80&w=400'">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-detail-card" id="process-step-4">
+                        <div class="detail-grid">
+                            <div class="detail-text">
+                                <div class="step-badge">STAGE 04</div>
+                                <h3>Continuous Solution Filtration</h3>
+                                <p>To maintain high anti-corrosion properties and aesthetic shine, the electroplating bath must be filtered continuously. Micro-impurities, carbon particles, and dust are removed to prevent rough coatings or surface defects.</p>
+                                <h4>Essential Allied Products used:</h4>
+                                <ul>
+                                    <li><strong>Activated Double-Tower Filters</strong> (Centrifugal filter systems)</li>
+                                    <li><strong>Filter Cartridges & Filter Cloth</strong> (Precision micron filtration bags)</li>
+                                    <li><strong>Holland Carbon Powder</strong> (Bath purification and organic chemical adsorption)</li>
+                                </ul>
+                            </div>
+                            <div class="detail-media">
+                                <img src="images/pumps_filter.jpg" alt="Filtration Setup" onerror="this.src='https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&q=80&w=400'">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-detail-card" id="process-step-5">
+                        <div class="detail-grid">
+                            <div class="detail-text">
+                                <div class="step-badge">STAGE 05</div>
+                                <h3>Surface Polishing & Final Finish</h3>
+                                <p>The plated parts undergo final buffing and mechanical polishing to eliminate minor scratches, enhance gloss, and seal the metallic surface. This elevates the finish into a premium grade commercially ready for distribution.</p>
+                                <h4>Essential Allied Products used:</h4>
+                                <ul>
+                                    <li><strong>Abrasive Belts (60 to 400 grit)</strong> (Grinding and pre-smoothing)</li>
+                                    <li><strong>Buffs & White Special Buffs</strong> (Polishing wheels for mirror finish)</li>
+                                    <li><strong>Falcon White & Leather SAN Polishes</strong> (High-grade wax bar compounds)</li>
+                                </ul>
+                            </div>
+                            <div class="detail-media">
+                                <img src="images/electropolishing_process.jpg" alt="Polishing Finish" onerror="this.src='https://images.unsplash.com/photo-1572981779307-38b8cabb2407?auto=format&fit=crop&q=80&w=400'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLIENT FEEDBACK / REVIEWS SECTION -->
+        <section id="feedback" class="section container">
+            <h2 class="section-title text-center">Client <span class="highlight">Feedback & Reviews</span></h2>
+            <p class="section-subtitle text-center">See what major manufacturers say about our chemicals and client support.</p>
+
+            <div class="feedback-layout">
+                <!-- Reviews Display (Carousel/Grid) -->
+                <div class="feedback-display">
+                    <h3>What Our Customers Say</h3>
+                    <div class="feedback-carousel" id="feedback-container">
+                        <!-- Loaded from app.js / localStorage -->
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="nav-btn prev-btn" id="prev-feedback"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button class="nav-btn next-btn" id="next-feedback"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Submit Feedback Form -->
+                <div class="feedback-form-card">
+                    <h3>Submit Your Feedback</h3>
+                    <p class="form-lead">We value your partnership. Let us know how our products helped your manufacturing line.</p>
+                    
+                    <form id="feedback-form" class="styled-form">
+                        <div class="form-group">
+                            <label for="fb-name">Your Name <span class="required">*</span></label>
+                            <input type="text" id="fb-name" required placeholder="e.g., Imran Khan">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="fb-company">Company / Industry <span class="required">*</span></label>
+                            <input type="text" id="fb-company" required placeholder="e.g., Sohrab Bicycles Vendor">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Rating <span class="required">*</span></label>
+                            <div class="rating-stars" id="star-rating">
+                                <span class="star" data-rating="1"><i class="fa-solid fa-star"></i></span>
+                                <span class="star" data-rating="2"><i class="fa-solid fa-star"></i></span>
+                                <span class="star" data-rating="3"><i class="fa-solid fa-star"></i></span>
+                                <span class="star" data-rating="4"><i class="fa-solid fa-star"></i></span>
+                                <span class="star" data-rating="5"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <input type="hidden" id="fb-rating" value="5" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fb-comments">Comments <span class="required">*</span></label>
+                            <textarea id="fb-comments" rows="3" required placeholder="How did our electroplating additives, salts, or metals perform?"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fa-solid fa-paper-plane"></i> Submit Feedback
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section container">
+            <h2 class="section-title text-center">Get in <span class="highlight">Touch</span></h2>
+            <p class="section-subtitle text-center">Reach out for custom formulations, bulk prices, or tech support.</p>
+
+            <div class="contact-grid">
+                <!-- Contact Details -->
+                <div class="contact-details-panel">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>Telephone: 021-34897733</p>
+                            <p>Mobile 1: 0332-8221338</p>
+                            <p>Mobile 2: 0312-2272232</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-brands fa-whatsapp text-success"></i></div>
+                        <div>
+                            <h4>WhatsApp Quick Chat</h4>
+                            <p>Chat directly with our Sales Team for immediate pricing.</p>
+                            <a href="https://wa.me/923122272232" target="_blank" rel="noopener" class="whatsapp-btn">
+                                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Address</h4>
+                            <p><a href="mailto:Allied.chemical@outlook.com">Allied.chemical@outlook.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>Office & Warehouse Address</h4>
+                            <p>Allied Chemical, E Area, Karachi, Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Hours & Info -->
+                <div class="contact-hours-panel">
+                    <h3><i class="fa-solid fa-clock"></i> Business Hours</h3>
+                    <table class="hours-table">
+                        <tr>
+                            <td>Monday – Saturday</td>
+                            <td>10:00 AM – 06:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td><span class="badge badge-danger">Closed</span></td>
+                        </tr>
+                    </table>
+                    
+                    <div class="map-container-mock">
+                        <div class="map-overlay">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <h4>Karachi Industrial Area Hub</h4>
+                            <p>E Area, Karachi, Pakistan</p>
+                            <span class="small-text">(Local delivery services and bulk shipments dispatch daily)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- SHOPPING CART / ORDER DRAWER -->
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="drawer-header">
+            <h3><i class="fa-solid fa-shopping-cart"></i> My Order Cart</h3>
+            <button class="drawer-close" id="cart-drawer-close">&times;</button>
+        </div>
+        
+        <div class="cart-body">
+            <div class="empty-cart" id="empty-cart">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <p>Your order cart is empty.</p>
+                <p class="small">Add chemical products from our catalog to get a quote.</p>
+                <button class="btn btn-secondary btn-sm" id="cart-go-catalog">Browse Catalog</button>
+            </div>
+            
+            <div class="cart-filled" id="cart-filled" style="display: none;">
+                <div class="cart-items-list" id="cart-items-list">
+                    <!-- Dynamic cart items go here -->
+                </div>
+                
+                <hr class="cart-divider">
+                
+                <!-- Customer Details for Order -->
+                <div class="cart-customer-form">
+                    <h4>Customer Details</h4>
+                    <form id="order-info-form">
+                        <div class="form-group-sm">
+                            <label for="order-name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="order-name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group-sm">
+                            <label for="order-company">Company Name</label>
+                            <input type="text" id="order-company" placeholder="e.g. Master Sanitary (if applicable)">
+                        </div>
+                        <div class="form-group-sm">
+                            <label for="order-phone">Contact Number <span class="required">*</span></label>
+                            <input type="tel" id="order-phone" required placeholder="e.g., 03001234567">
+                        </div>
+                        <div class="form-group-sm">
+                            <label for="order-message">Special Instructions (Optional)</label>
+                            <textarea id="order-message" rows="2" placeholder="Packaging requirements or urgent delivery..."></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="cart-summary">
+                    <div class="summary-row">
+                        <span>Total Items Selected:</span>
+                        <strong id="cart-total-qty">0</strong>
+                    </div>
+                </div>
+
+                <div class="cart-actions">
+                    <button class="btn btn-success btn-block" id="btn-whatsapp-order">
+                        <i class="fa-brands fa-whatsapp"></i> Send Order via WhatsApp
+                    </button>
+                    <button class="btn btn-primary btn-block" id="btn-email-order">
+                        <i class="fa-solid fa-envelope"></i> Send Order Inquiry Email
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check toast-icon" id="toast-icon"></i>
+        <span class="toast-message" id="toast-message">Item added to your order!</span>
+    </div>
+
+    <!-- Scroll To Top Button -->
+    <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <h4>ALLIED CHEMICALS</h4>
+                <p>One of the largest importers and leading suppliers of high-grade electroplating chemicals, metals, and surface polishing materials in Pakistan. Providing exceptional customer service at competitive prices since 2013.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/923122272232" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:Allied.chemical@outlook.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home" onclick="switchTab('home')">Home</a></li>
+                    <li><a href="#catalog" onclick="switchTab('catalog')">Product Catalog</a></li>
+                    <li><a href="#process" onclick="switchTab('process')">Interactive Process Flow</a></li>
+                    <li><a href="#feedback" onclick="switchTab('feedback')">Client Reviews</a></li>
+                    <li><a href="#contact" onclick="switchTab('contact')">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-categories">
+                <h4>Product Lines</h4>
+                <ul>
+                    <li><a href="#catalog" onclick="switchCategoryTab('nickel')">Nickel Plating Metals & Salts</a></li>
+                    <li><a href="#catalog" onclick="switchCategoryTab('zinc')">Zinc Plating Salts & Brighteners</a></li>
+                    <li><a href="#catalog" onclick="switchCategoryTab('electroplating-other')">Chrome & Copper Salts</a></li>
+                    <li><a href="#catalog" onclick="switchCategoryTab('polishing')">Buffs & Abrasive Belts</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+            <div class="container">
+                <p>Copyright &copy; 2013 - 2026 Allied Chemicals. All Rights Reserved.</p>
+                <p class="developer-credit">Designed with Premium Aesthetics & Professional Client Order Systems.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
